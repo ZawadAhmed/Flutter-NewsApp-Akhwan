@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
-import 'package:newsly/model/news.dart';
-import 'package:newsly/viewmodel/service/api_service.dart';
-import 'package:newsly/view/widget/newsList.dart';
+import 'package:newsportalmy/model/news.dart';
+import 'package:newsportalmy/model/service/api_service.dart';
+import 'package:newsportalmy/widget/newscategory.dart';
 import 'package:http/http.dart' as http;
-import 'package:newsly/view/widget/shimmerLoading.dart';
+import 'package:newsportalmy/widget/shimmerLoading.dart';
 
 class BreakNewsTechnology extends StatelessWidget {
-  const BreakNewsTechnology({ Key? key }) : super(key: key);
+  const BreakNewsTechnology({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-     ApiService api = ApiService();
-    
+    ApiService api = ApiService();
+
     return Container(
       height: 270,
       child: FutureBuilder<List<News>>(
@@ -19,13 +19,13 @@ class BreakNewsTechnology extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             return Center(
-              child: Text("Pengambilan Data API Error"),
+              child: Text("Error Fetching API"),
             );
-          }else if (snapshot.hasData){
+          } else if (snapshot.hasData) {
             return BreakNewsList(news: snapshot.data!);
           }
           return Center(
-            child: ShimmerLoadingBreakNews(),
+            child: ShimmerLoading(),
           );
         },
       ),

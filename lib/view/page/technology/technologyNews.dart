@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:newsly/view/page/technology/breakNewsTechnology.dart';
-import 'package:newsly/view/page/technology/topHeadlinesTechnology.dart';
+import 'package:newsportalmy/view/page/technology/breakingNewsTechnology.dart';
+import 'package:newsportalmy/view/page/technology/topHeadlinesTechnology.dart';
 
 class TechnologyNews extends StatelessWidget {
-  const TechnologyNews({ Key? key }) : super(key: key);
+  const TechnologyNews({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
