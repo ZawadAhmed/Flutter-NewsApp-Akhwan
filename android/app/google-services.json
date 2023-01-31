@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "910521548733",
+    "project_id": "akhwan-newsportalmy",
+    "storage_bucket": "akhwan-newsportalmy.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:910521548733:android:930e1b7014b8ef739a5cd4",
+        "android_client_info": {
+          "package_name": "com.example.newsportalmy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "910521548733-iueakibno8ncrvj7cdu1g2d7deh9fab9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHIPPSPutswy4_cAzZ5O2edRU8zNx4RVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "910521548733-iueakibno8ncrvj7cdu1g2d7deh9fab9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,7 +3,7 @@ import 'package:newsportalmy/model/news.dart';
 import 'package:newsportalmy/model/service/api_service.dart';
 import 'package:newsportalmy/widget/newscategory.dart';
 import 'package:http/http.dart' as http;
-import 'package:newsportalmy/widget/shimmerLoading.dart';
+import 'package:newsportalmy/widget/shimmerloading.dart';
 
 class TopHeadlinesBusiness extends StatefulWidget {
   const TopHeadlinesBusiness({Key? key}) : super(key: key);

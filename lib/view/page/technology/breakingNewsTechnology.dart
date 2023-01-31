@@ -25,7 +25,7 @@ class BreakNewsTechnology extends StatelessWidget {
             return BreakNewsList(news: snapshot.data!);
           }
           return Center(
-            child: ShimmerLoading(),
+            child: ShimmerLoadingBreak(),
           );
         },
       ),

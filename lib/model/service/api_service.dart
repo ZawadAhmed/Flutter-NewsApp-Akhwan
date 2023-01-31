@@ -1,11 +1,12 @@
 import 'dart:convert';
+
 import 'package:http/http.dart' as http;
 import 'package:newsportalmy/model/news.dart';
 
 class ApiService {
   late String _category;
-  String _country = "id";
-  String _apiKey2 = "2321d66b033643c59f2179c5a077da24";
+  String _country = "my";
+  String _apiKey2 = "ddf3223b0d1d4b4fa3d3cf7b76d0c383";
   String _baseUrl = "https://newsapi.org/v2/";
 
   List<News> parseNews(String responseBody) {
@@ -29,13 +30,6 @@ class ApiService {
     return parseNews(response.body);
   }
 
-  Future<List<News>> fetchNewsHealth(http.Client client) async {
-    _category = "health";
-    final response = await client.get(Uri.parse(
-        '${_baseUrl}top-headlines?country=$_country&category=$_category&apiKey=$_apiKey2'));
-    return parseNews(response.body);
-  }
-
   Future<List<News>> fetchNewsBusiness(http.Client client) async {
     _category = "business";
     final response = await client.get(Uri.parse(
@@ -49,4 +43,12 @@ class ApiService {
         '${_baseUrl}top-headlines?country=$_country&category=$_category&apiKey=$_apiKey2'));
     return parseNews(response.body);
   }
+
+  /*Future<List<News>> fetchNewsHealth(http.Client client) async {
+    _category = "health";
+    final response = await client.get(Uri.parse(
+        '${_baseUrl}top-headlines?country=$_country&category=$_category&apiKey=$_apiKey2'));
+    return parseNews(response.body);
+  }*/
+
 }

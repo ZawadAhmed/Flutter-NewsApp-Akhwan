@@ -5,7 +5,7 @@ import 'package:newsportalmy/model/news.dart';
 import 'package:newsportalmy/model/service/api_service.dart';
 import 'package:http/http.dart' as http;
 import 'package:newsportalmy/widget/newscategory.dart';
-import 'package:newsportalmy/widget/shimmerLoading.dart';
+import 'package:newsportalmy/widget/shimmerloading.dart';
 
 class BreakNewsBusiness extends StatefulWidget {
   const BreakNewsBusiness({Key? key}) : super(key: key);
@@ -26,13 +26,13 @@ class _BreakNewsBusinessState extends State<BreakNewsBusiness> {
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             return Center(
-              child: Text("Pengambilan Data API Error"),
+              child: Text("Error Fetching API"),
             );
           } else if (snapshot.hasData) {
             return BreakNewsList(news: snapshot.data!);
           }
           return Center(
-            child: ShimmerLoading(),
+            child: ShimmerLoadingBreak(),
           );
         },
       ),

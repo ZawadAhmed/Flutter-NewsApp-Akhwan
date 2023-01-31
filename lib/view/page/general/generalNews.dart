@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
-import 'package:newsly/view/page/general/breakNewsGeneral.dart';
-import 'package:newsly/view/page/general/topHeadlineGeneral.dart';
+import 'package:newsportalmy/view/page/general/breakNewsGeneral.dart';
+import 'package:newsportalmy/view/page/general/topHeadlineGeneral.dart';
 
 class GeneralNews extends StatelessWidget {
-  const GeneralNews({ Key? key }) : super(key: key);
+  const GeneralNews({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
