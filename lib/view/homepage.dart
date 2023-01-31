@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import '../widget/home.dart';
 
-class Beranda extends StatefulWidget {
-  const Beranda({Key? key}) : super(key: key);
+class Homepage extends StatefulWidget {
+  const Homepage({Key? key}) : super(key: key);
 
   @override
-  _BerandaState createState() => _BerandaState();
+  _HomepageState createState() => _HomepageState();
 }
 
-class _BerandaState extends State<Beranda> {
+class _HomepageState extends State<Homepage> {
   int currentTab = 0;
   final PageStorageBucket bucket = PageStorageBucket();
   Widget currentScreen = Home();
@@ -20,18 +20,8 @@ class _BerandaState extends State<Beranda> {
         bucket: bucket,
         child: currentScreen,
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          /*Navigator.push(context,
-              MaterialPageRoute(builder: (context) => FormAddArticle()));*/
-        },
-        child: Icon(Icons.note_add),
-      ),
-      floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       bottomNavigationBar: BottomAppBar(
         elevation: 16,
-        shape: CircularNotchedRectangle(),
-        notchMargin: 5,
         child: Container(
           height: 60,
           child: Row(

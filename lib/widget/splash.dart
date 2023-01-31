@@ -14,7 +14,7 @@ class SplashScreen extends StatelessWidget {
       home: AnimatedSplashScreen(
         splash: Shimmer.fromColors(
           baseColor: Colors.white,
-          highlightColor: Color.fromARGB(255, 26, 37, 42),
+          highlightColor: Color.fromARGB(255, 84, 190, 239),
           child: Center(
             child: Text(
               "NewsPortalMY",
@@ -22,11 +22,11 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
         ),
-        nextScreen: Beranda(),
+        nextScreen: Homepage(),
         duration: 2000,
         splashTransition: SplashTransition.fadeTransition,
         pageTransitionType: PageTransitionType.fade,
-        backgroundColor: Colors.blue,
+        backgroundColor: Colors.blueGrey,
       ),
     );
   }
