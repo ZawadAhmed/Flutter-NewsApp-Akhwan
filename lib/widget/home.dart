@@ -3,7 +3,7 @@ import 'package:newsportalmy/view/page/business/businessNews.dart';
 import 'package:newsportalmy/view/page/sport/sportNews.dart';
 import 'package:newsportalmy/widget/drawer.dart';
 import 'package:newsportalmy/view/page/general/generalNews.dart';
-import 'package:newsportalmy/view/page/technology/technologyNews.dart';
+import 'package:newsportalmy/view/page/technology/technology_News.dart';
 
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);

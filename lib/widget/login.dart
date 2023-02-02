@@ -35,7 +35,8 @@ class _LoginPageState extends State<LoginPage> {
         password: passwordController.text,
       );
       // pop the loading circle
-      Navigator.pop(context);
+      //Navigator.pop(context);
+      Navigator.push(context, MaterialPageRoute (builder: (context) => const Homepage()));
     } on FirebaseAuthException catch (e) {
       // pop the loading circle
       Navigator.pop(context);
@@ -175,6 +176,7 @@ class _LoginPageState extends State<LoginPage> {
               ),
               SizedBox(height: 25),
               */
+              
               //Not a member? Register now!
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,

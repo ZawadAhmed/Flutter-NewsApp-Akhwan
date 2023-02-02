@@ -23,7 +23,7 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
         ),
-        nextScreen: const Homepage(),
+        nextScreen: LoginPage(onTap: () {  },),
         duration: 2000,
         splashTransition: SplashTransition.fadeTransition,
         pageTransitionType: PageTransitionType.fade,
