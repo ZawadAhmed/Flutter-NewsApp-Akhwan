@@ -25,8 +25,9 @@ class _HomeState extends State<Home> {
           Tab(
             child: Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  border: Border.all(color: Colors.blue)),
+                borderRadius: BorderRadius.circular(50),
+                //border: Border.all(color: Colors.blue)
+              ),
               child: const Align(
                 alignment: Alignment.center,
                 child: Padding(
@@ -39,8 +40,9 @@ class _HomeState extends State<Home> {
           Tab(
             child: Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  border: Border.all(color: Colors.blue)),
+                borderRadius: BorderRadius.circular(50),
+                //border: Border.all(color: Colors.blue)
+              ),
               child: const Align(
                 alignment: Alignment.center,
                 child: Padding(
@@ -53,8 +55,9 @@ class _HomeState extends State<Home> {
           Tab(
             child: Container(
               decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(50),
-                  border: Border.all(color: Colors.blue)),
+                borderRadius: BorderRadius.circular(50),
+                //border: Border.all(color: Colors.blue)
+              ),
               child: const Align(
                 alignment: Alignment.center,
                 child: Padding(
@@ -68,7 +71,7 @@ class _HomeState extends State<Home> {
             child: Container(
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(50),
-                //border: Border.all(color: Colors.blue)
+                // border: Border.all(color: Colors.blue)
               ),
               child: const Align(
                 alignment: Alignment.center,

@@ -23,7 +23,9 @@ class SplashScreen extends StatelessWidget {
             ),
           ),
         ),
-        nextScreen: LoginPage(onTap: () {  },),
+        nextScreen: LoginPage(
+          onTap: () {},
+        ),
         duration: 2000,
         splashTransition: SplashTransition.fadeTransition,
         pageTransitionType: PageTransitionType.fade,
@@ -32,5 +34,3 @@ class SplashScreen extends StatelessWidget {
     );
   }
 }
-
-//this is the latest version of file

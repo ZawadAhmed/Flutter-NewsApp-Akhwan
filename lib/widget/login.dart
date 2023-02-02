@@ -1,11 +1,12 @@
 import "package:flutter/material.dart";
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:newsportalmy/widget/Authentication/register_page.dart';
 import '../view/homepage.dart';
 import 'Components/my_button.dart';
 
 class LoginPage extends StatefulWidget {
   final Function()? onTap;
-  const LoginPage({super.key, required this.onTap});
+  const LoginPage({super.key, this.onTap});
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -18,29 +19,22 @@ class _LoginPageState extends State<LoginPage> {
 
   // sign user in method
   void signUserIn() async {
-    // show loading circle
-    showDialog(
-      context: context,
-      builder: (context) {
-        return const Center(
-          child: CircularProgressIndicator(),
-        );
-      },
-    );
-
     // try sign in
     try {
       await FirebaseAuth.instance.signInWithEmailAndPassword(
         email: emailController.text,
         password: passwordController.text,
       );
-      // pop the loading circle
-      //Navigator.pop(context);
-      Navigator.push(context, MaterialPageRoute (builder: (context) => const Homepage()));
+
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => const Homepage()));
     } on FirebaseAuthException catch (e) {
-      // pop the loading circle
-      Navigator.pop(context);
-      // show error message
+      //refresh login page
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const LoginPage(),
+          ));
       showErrorMessage(e.code);
     }
   }
@@ -51,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          backgroundColor: Colors.deepPurple,
+          backgroundColor: Colors.blue,
           title: Center(
             child: Text(
               message,
@@ -173,11 +167,12 @@ class _LoginPageState extends State<LoginPage> {
                     child: Center(),
                   ),
                 ),
-              ),
+              ),*/
+
               SizedBox(height: 25),
-              */
-              
+
               //Not a member? Register now!
+
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: const [
@@ -186,13 +181,6 @@ class _LoginPageState extends State<LoginPage> {
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                       color: Colors.white,
-                    ),
-                  ),
-                  Text(
-                    " Register Now",
-                    style: TextStyle(
-                      color: Colors.blue,
-                      fontWeight: FontWeight.bold,
                     ),
                   ),
                 ],
@@ -204,33 +192,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
-
-/*
-class LoginPage extends StatefulWidget {
-  final VoidCallback showRegisterPage;
-  const LoginPage({Key? key, required this.showRegisterPage}) : super(key: key);
-
-  @override
-  State<LoginPage> createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
-  //text controllers
-  final _emailController = TextEditingController();
-  final _passwordController = TextEditingController();
-
-  Future signIn() async {
-    await FirebaseAuth.instance.signInWithEmailAndPassword(
-      email: _emailController.text.trim(),
-      password: _passwordController.text.trim(),
-    );
-  }
-
-  @override
-  void dispose() {
-    _emailController.dispose();
-    _passwordController.dispose();
-    super.dispose();
-  }
- */
