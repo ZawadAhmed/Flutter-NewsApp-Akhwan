@@ -21,7 +21,7 @@ class TechnologyNews extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black),
+                      color: Color.fromARGB(255, 168, 11, 0)),
                 ),
               ),
               const SizedBox(

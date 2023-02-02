@@ -18,7 +18,7 @@ class TopHeadlinesSport extends StatelessWidget {
         builder: (context, snapshot) {
           if (snapshot.hasError) {
             return const Center(
-              child: Text("Error Fetching Data"),
+              child: Text("Error Fetching API"),
             );
           } else if (snapshot.hasData) {
             return TopHeadlinesList(news: snapshot.data!);

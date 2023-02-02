@@ -22,23 +22,23 @@ class ShimmerLoadingBreak extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Container(
-                      child: Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         height: 144,
-                        margin: EdgeInsets.only(top: 16, left: 16, right: 16),
+                        margin:
+                            const EdgeInsets.only(top: 16, left: 16, right: 16),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
                       Container(
                         height: 70,
-                        margin: EdgeInsets.only(left: 16, right: 16),
+                        margin: const EdgeInsets.only(left: 16, right: 16),
                       )
                     ],
-                  ))),
+                  )),
             ),
           );
         },
@@ -56,13 +56,13 @@ class ShimmerLoadingTopHead extends StatelessWidget {
       baseColor: Colors.grey,
       highlightColor: Colors.white70,
       child: ListView.builder(
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           itemCount: 10,
           reverse: true,
           itemBuilder: (context, index) {
             return Container(
-              margin: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+              margin: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
               height: 120,
               child: Card(
                 child: Row(
@@ -70,13 +70,14 @@ class ShimmerLoadingTopHead extends StatelessWidget {
                     Container(
                       width: 73,
                       height: 77,
-                      margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                      margin:
+                          const EdgeInsets.only(left: 16, top: 16, bottom: 16),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       width: 16,
                     ),
                     Container(
-                      margin: EdgeInsets.only(top: 16, bottom: 16),
+                      margin: const EdgeInsets.only(top: 16, bottom: 16),
                       width: 206,
                     )
                   ],

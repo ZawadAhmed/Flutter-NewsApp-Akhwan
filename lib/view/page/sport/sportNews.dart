@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:newsportalmy/view/page/sport/sportHeadlines.dart';
 
 import 'breakingnewsSport.dart';
@@ -23,7 +22,7 @@ class SportNews extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: Colors.black),
+                      color: Color.fromARGB(255, 168, 11, 0)),
                 ),
               ),
               const SizedBox(
@@ -40,7 +39,7 @@ class SportNews extends StatelessWidget {
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: HexColor('#4E3A55')),
+                      color: Colors.black),
                 ),
               ),
               const SizedBox(

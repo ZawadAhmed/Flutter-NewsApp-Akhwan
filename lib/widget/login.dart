@@ -1,12 +1,11 @@
 import "package:flutter/material.dart";
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:newsportalmy/widget/Authentication/register_page.dart';
 import '../view/homepage.dart';
 import 'Components/my_button.dart';
 
 class LoginPage extends StatefulWidget {
-  final Function()? onTap;
-  const LoginPage({super.key, this.onTap});
+  final VoidCallback showRegisterPage;
+  const LoginPage({Key? key, required this.showRegisterPage}) : super(key: key);
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -33,7 +32,9 @@ class _LoginPageState extends State<LoginPage> {
       Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const LoginPage(),
+            builder: (context) => LoginPage(
+              showRegisterPage: () {},
+            ),
           ));
       showErrorMessage(e.code);
     }
@@ -155,35 +156,33 @@ class _LoginPageState extends State<LoginPage> {
                 onTap: signUserIn,
               ),
 
-              /*Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 25.0),
-                child: GestureDetector(
-                  child: Container(
-                    padding: EdgeInsets.all(20),
-                    decoration: BoxDecoration(
-                      color: Colors.blue,
-                      borderRadius: BorderRadius.circular(12),
-                    ),
-                    child: Center(),
-                  ),
-                ),
-              ),*/
-
-              SizedBox(height: 25),
-
               //Not a member? Register now!
+              const SizedBox(height: 10),
 
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: const [
-                  Text(
-                    "Not a member ?",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      color: Colors.white,
+              SizedBox(
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    // ignore: prefer_const_constructors
+                    Text(
+                      "Not a member ?",
+                      style: const TextStyle(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.white,
+                      ),
                     ),
-                  ),
-                ],
+                    GestureDetector(
+                      onDoubleTap: widget.showRegisterPage,
+                      child: const Text(
+                        " Register Now",
+                        style: TextStyle(
+                          color: Colors.blue,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
               ),
             ]),
           ),

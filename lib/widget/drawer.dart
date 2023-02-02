@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:newsportalmy/view/homepage.dart';
 
 class DrawerMenu extends StatelessWidget {
   const DrawerMenu({Key? key}) : super(key: key);
@@ -9,8 +10,12 @@ class DrawerMenu extends StatelessWidget {
       child: ListView(
         children: <Widget>[
           UserAccountsDrawerHeader(
-              currentAccountPicture:
-                  Image.asset('assets/images/icon_user.jpeg'),
+              currentAccountPicture: Image.asset(
+                'lib/images/icon_user.jpeg',
+                height: 50,
+                width: 30,
+                fit: BoxFit.fitWidth,
+              ),
               accountName: const Text('AkhwanBrothers'),
               accountEmail: const Text('somethingcool@email.com')),
           ListTile(
@@ -26,6 +31,11 @@ class DrawerMenu extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.business),
             title: const Text('Business'),
+            onTap: () {},
+          ),
+          ListTile(
+            leading: const Icon(Icons.business),
+            title: const Text('Sport'),
             onTap: () {},
           ),
         ],

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hexcolor/hexcolor.dart';
 import 'package:newsportalmy/view/page/business/breakingNewsBusiness.dart';
 import 'package:newsportalmy/view/page/business/topHeadlinesBusiness.dart';
 
@@ -9,43 +8,43 @@ class BusinessNews extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        margin: EdgeInsets.only(top: 16),
+        margin: const EdgeInsets.only(top: 16),
         child: SingleChildScrollView(
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: <Widget>[
               Container(
-                margin: EdgeInsets.only(left: 16),
-                child: Text(
+                margin: const EdgeInsets.only(left: 16),
+                child: const Text(
                   'Breaking News',
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: HexColor('#4E3A55')),
+                      color: Color.fromARGB(255, 168, 11, 0)),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              BreakNewsBusiness(),
-              SizedBox(
+              const BreakNewsBusiness(),
+              const SizedBox(
                 height: 24,
               ),
               Container(
-                margin: EdgeInsets.only(left: 16),
-                child: Text(
+                margin: const EdgeInsets.only(left: 16),
+                child: const Text(
                   'Top Headlines',
                   style: TextStyle(
                       fontSize: 24,
                       fontWeight: FontWeight.bold,
-                      color: HexColor('#4E3A55')),
+                      color: Colors.black),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 16,
               ),
-              TopHeadlinesBusiness()
+              const TopHeadlinesBusiness()
             ],
           ),
         ));

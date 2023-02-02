@@ -22,13 +22,13 @@ class _TopHeadlinesBusinessState extends State<TopHeadlinesBusiness> {
         future: api.fetchNewsBusiness(http.Client()),
         builder: (context, snapshot) {
           if (snapshot.hasError) {
-            return Center(
-              child: Text("Pengambilan Data API Error"),
+            return const Center(
+              child: Text("Error Fetching API"),
             );
           } else if (snapshot.hasData) {
             return TopHeadlinesList(news: snapshot.data!);
           }
-          return Center(
+          return const Center(
             child: ShimmerLoadingTopHead(),
           );
         },

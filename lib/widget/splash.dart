@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
-import 'package:newsportalmy/view/homepage.dart';
+import 'package:newsportalmy/widget/Authentication/register_page.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:newsportalmy/widget/login.dart';
@@ -24,7 +24,7 @@ class SplashScreen extends StatelessWidget {
           ),
         ),
         nextScreen: LoginPage(
-          onTap: () {},
+          showRegisterPage: () {},
         ),
         duration: 2000,
         splashTransition: SplashTransition.fadeTransition,
@@ -34,3 +34,11 @@ class SplashScreen extends StatelessWidget {
     );
   }
 }
+
+/*RegisterPage(
+          showLoginPage: () {},
+        ),*/
+
+/*nextScreen: LoginPage(
+          showRegisterPage: () {},
+        ),*/
