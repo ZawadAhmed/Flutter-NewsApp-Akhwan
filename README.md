@@ -69,4 +69,9 @@ Our system contains the following features:
   - hexcolor: ^2.0.5
   - page_transition: "^2.0.9"
     
-
+ ### References
+ 
+ - https://docs.flutter.dev/
+ - https://docs.flutter.dev/development/ui/advanced/gestures
+ - https://pub.dev/packages/firebase_core
+ - https://pub.dev/packages/firebase_auth
