@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_final_fields
+
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:newsportalmy/model/news.dart';
@@ -52,5 +54,4 @@ class ApiService {
         '${_baseUrl}top-headlines?country=$_country&category=$_category&apiKey=$_apiKey2'));
     return parseNews(response.body);
   }*/
-
 }

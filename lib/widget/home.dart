@@ -54,9 +54,8 @@ class _HomeState extends State<Home> {
           Tab(
             child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                //border: Border.all(color: Colors.blue)
-              ),
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(color: Colors.blue)),
               child: Align(
                 alignment: Alignment.center,
                 child: Padding(
@@ -73,28 +72,32 @@ class _HomeState extends State<Home> {
         child: Scaffold(
             appBar: AppBar(
               title: Center(
-                  child: Text(
-                'NewsPortalMY',
-                style: TextStyle(
-                    fontWeight: FontWeight.bold, color: Colors.blue[700]),
-              ) /*child: Text(
-              'NewsPortal',
-              style: TextStyle(
-                  fontWeight: FontWeight.bold, color: Colors.blue[700]),
-            )*/
-                  ),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      "Welcome to NewsPortal",
+                      style: const TextStyle(fontSize: 24, color: Colors.white),
+                    ),
+                    Text(
+                      "MY",
+                      style: const TextStyle(fontSize: 24, color: Colors.blue),
+                    ),
+                  ],
+                ),
+              ),
               backgroundColor: Colors.white,
               iconTheme: IconThemeData(color: Colors.black),
               elevation: 0,
               bottom: PreferredSize(
-                preferredSize: new Size(200.0, 52),
+                preferredSize: Size(200.0, 52),
                 child: Container(
-                    margin: EdgeInsets.only(left: 16, right: 16),
+                    margin: const EdgeInsets.only(left: 16, right: 16),
                     child: _TabBar),
               ),
               actions: <Widget>[
                 Container(
-                  margin: EdgeInsets.only(right: 0),
+                  margin: const EdgeInsets.only(right: 0),
                   child: IconButton(
                       onPressed: () {},
                       icon: Image.asset('images/icon_user.png')),
@@ -107,7 +110,7 @@ class _HomeState extends State<Home> {
               children: <Widget>[
                 GeneralNews(),
                 TechnologyNews(),
-                BusinessNews()
+                BusinessNews(),
               ],
             )));
   }

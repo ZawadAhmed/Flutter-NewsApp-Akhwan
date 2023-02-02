@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import '../view/homepage.dart';
 import 'package:animated_splash_screen/animated_splash_screen.dart';
+import 'package:newsportalmy/view/homepage.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:shimmer/shimmer.dart';
+import 'package:newsportalmy/widget/login.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
@@ -14,7 +15,7 @@ class SplashScreen extends StatelessWidget {
       home: AnimatedSplashScreen(
         splash: Shimmer.fromColors(
           baseColor: Colors.white,
-          highlightColor: Color.fromARGB(255, 84, 190, 239),
+          highlightColor: Color.fromARGB(255, 54, 180, 238),
           child: Center(
             child: Text(
               "NewsPortalMY",
@@ -26,7 +27,7 @@ class SplashScreen extends StatelessWidget {
         duration: 2000,
         splashTransition: SplashTransition.fadeTransition,
         pageTransitionType: PageTransitionType.fade,
-        backgroundColor: Colors.blueGrey,
+        backgroundColor: Color.fromARGB(222, 0, 40, 127),
       ),
     );
   }
