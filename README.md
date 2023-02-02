@@ -71,7 +71,10 @@ Our system contains the following features:
     
  ### References
  
- - https://docs.flutter.dev/
  - https://docs.flutter.dev/development/ui/advanced/gestures
  - https://pub.dev/packages/firebase_core
  - https://pub.dev/packages/firebase_auth
+ - https://www.youtube.com/watch?v=TkuO8OLgvkk (Login & Logout • Firebase x Flutter Tutorial)
+ - https://www.youtube.com/watch?v=Mfa3u3naQew (Sign Up Users • Firebase x Flutter Tutorial) 
+ - https://www.youtube.com/watch?v=Sp4_2zi0kZg (Reset Password • Firebase x Flutter Tutorial)
+  - https://www.youtube.com/watch?v=idJDAdn_jKk (Create & Store User Data • Firebase x Flutter Tutorial)
