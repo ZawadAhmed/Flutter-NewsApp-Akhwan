@@ -30,7 +30,7 @@ class BreakNewsList extends StatelessWidget {
                           source: news[index].source,
                         )));
           },
-          child: Container(
+          child: SizedBox(
             width: 304,
             child: Padding(
               padding: const EdgeInsets.only(left: 16),
@@ -38,13 +38,13 @@ class BreakNewsList extends StatelessWidget {
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(20),
                   ),
-                  child: Container(
-                      child: Column(
+                  child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
                       Container(
                         height: 144,
-                        margin: EdgeInsets.only(top: 16, left: 16, right: 16),
+                        margin:
+                            const EdgeInsets.only(top: 16, left: 16, right: 16),
                         child: ClipRRect(
                             borderRadius: BorderRadius.circular(12.0),
                             child: Image.network(
@@ -52,12 +52,12 @@ class BreakNewsList extends StatelessWidget {
                               fit: BoxFit.cover,
                             )),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         height: 12,
                       ),
                       Container(
                         height: 70,
-                        margin: EdgeInsets.only(left: 16, right: 16),
+                        margin: const EdgeInsets.only(left: 16, right: 16),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -80,7 +80,7 @@ class BreakNewsList extends StatelessWidget {
                         ),
                       )
                     ],
-                  ))),
+                  )),
             ),
           ),
         );
@@ -98,7 +98,7 @@ class TopHeadlinesList extends StatelessWidget {
   Widget build(BuildContext context) {
     return Flexible(
       child: ListView.builder(
-          physics: NeverScrollableScrollPhysics(),
+          physics: const NeverScrollableScrollPhysics(),
           shrinkWrap: true,
           itemCount: news.length,
           reverse: true,
@@ -119,7 +119,7 @@ class TopHeadlinesList extends StatelessWidget {
                             )));
               },
               child: Container(
-                margin: EdgeInsets.only(left: 16, right: 16, bottom: 12),
+                margin: const EdgeInsets.only(left: 16, right: 16, bottom: 12),
                 height: 120,
                 child: Card(
                   child: Row(
@@ -127,7 +127,8 @@ class TopHeadlinesList extends StatelessWidget {
                       Container(
                         width: 73,
                         height: 77,
-                        margin: EdgeInsets.only(left: 16, top: 16, bottom: 16),
+                        margin: const EdgeInsets.only(
+                            left: 16, top: 16, bottom: 16),
                         child: ClipRRect(
                           borderRadius: BorderRadius.circular(4.0),
                           child: Image.network(
@@ -136,11 +137,11 @@ class TopHeadlinesList extends StatelessWidget {
                           ),
                         ),
                       ),
-                      SizedBox(
+                      const SizedBox(
                         width: 16,
                       ),
                       Container(
-                          margin: EdgeInsets.only(top: 16, bottom: 16),
+                          margin: const EdgeInsets.only(top: 16, bottom: 16),
                           width: 206,
                           child: Column(
                             mainAxisAlignment: MainAxisAlignment.spaceBetween,

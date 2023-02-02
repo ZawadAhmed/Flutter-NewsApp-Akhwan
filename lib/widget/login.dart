@@ -65,19 +65,19 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(222, 0, 40, 127),
+      backgroundColor: const Color.fromARGB(222, 0, 40, 127),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
             child:
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: [
               //icon
-              Icon(
+              const Icon(
                 Icons.newspaper,
                 size: 100,
                 color: Colors.white,
               ),
-              SizedBox(
+              const SizedBox(
                 height: 75,
               ),
 
@@ -85,7 +85,7 @@ class _LoginPageState extends State<LoginPage> {
 
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Text(
                     "Welcome to NewsPortal",
                     style: TextStyle(fontSize: 24, color: Colors.white),
@@ -99,15 +99,15 @@ class _LoginPageState extends State<LoginPage> {
 
               //Hello Again!
 
-              SizedBox(height: 10),
-              Text(
+              const SizedBox(height: 10),
+              const Text(
                 "Welcome back, you've been missed!",
                 style: TextStyle(
                   fontSize: 18,
                   color: Colors.white,
                 ),
               ),
-              SizedBox(height: 50),
+              const SizedBox(height: 50),
 
               //Email textfield
               Padding(
@@ -116,11 +116,11 @@ class _LoginPageState extends State<LoginPage> {
                   controller: emailController,
                   decoration: InputDecoration(
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white),
+                      borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.blue),
+                      borderSide: const BorderSide(color: Colors.blue),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     hintText: "Email",
@@ -129,7 +129,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
 
               //Password Textfield
               Padding(
@@ -138,11 +138,11 @@ class _LoginPageState extends State<LoginPage> {
                   controller: passwordController,
                   decoration: InputDecoration(
                     enabledBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.white),
+                      borderSide: const BorderSide(color: Colors.white),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     focusedBorder: OutlineInputBorder(
-                      borderSide: BorderSide(color: Colors.blue),
+                      borderSide: const BorderSide(color: Colors.blue),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     hintText: "Password",
@@ -151,7 +151,7 @@ class _LoginPageState extends State<LoginPage> {
                   ),
                 ),
               ),
-              SizedBox(height: 10),
+              const SizedBox(height: 10),
 
               //Sign in Button
 
@@ -178,7 +178,7 @@ class _LoginPageState extends State<LoginPage> {
               //Not a member? Register now!
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   Text(
                     "Not a member ?",
                     style: TextStyle(

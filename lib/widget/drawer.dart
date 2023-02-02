@@ -10,22 +10,22 @@ class DrawerMenu extends StatelessWidget {
         children: <Widget>[
           UserAccountsDrawerHeader(
               currentAccountPicture:
-                  Container(child: Image.asset('assets/images/icon_user.jpg')),
-              accountName: Text('AkhwanBrothers'),
-              accountEmail: Text('somethingcool@email.com')),
+                  Image.asset('assets/images/icon_user.jpeg'),
+              accountName: const Text('AkhwanBrothers'),
+              accountEmail: const Text('somethingcool@email.com')),
           ListTile(
-            leading: Icon(Icons.home),
-            title: Text('Home'),
+            leading: const Icon(Icons.home),
+            title: const Text('Home'),
             onTap: () {},
           ),
           ListTile(
-            leading: Icon(Icons.devices),
-            title: Text('Technology'),
+            leading: const Icon(Icons.devices),
+            title: const Text('Technology'),
             onTap: () {},
           ),
           ListTile(
-            leading: Icon(Icons.business),
-            title: Text('Business'),
+            leading: const Icon(Icons.business),
+            title: const Text('Business'),
             onTap: () {},
           ),
         ],

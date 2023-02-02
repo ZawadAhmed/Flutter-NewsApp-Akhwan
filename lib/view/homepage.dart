@@ -22,7 +22,7 @@ class _HomepageState extends State<Homepage> {
       ),
       bottomNavigationBar: BottomAppBar(
         elevation: 16,
-        child: Container(
+        child: SizedBox(
           height: 60,
           child: Row(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
@@ -54,7 +54,7 @@ class _HomepageState extends State<Homepage> {
               MaterialButton(
                 onPressed: () {
                   setState(() {
-                    /*currentScreen = ArticlesPage();
+                    /*currentScreen = ProfilePage();
                     currentTab = 1; */
                   });
                 },
@@ -62,13 +62,17 @@ class _HomepageState extends State<Homepage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Icon(
-                      Icons.article,
-                      color: currentTab == 1 ? Colors.blue : Colors.grey,
+                      Icons.person,
+                      color: currentTab == 1
+                          ? const Color.fromARGB(222, 0, 40, 127)
+                          : Colors.grey,
                     ),
                     Text(
-                      "Articles",
+                      "Profile",
                       style: TextStyle(
-                          color: currentTab == 1 ? Colors.blue : Colors.grey),
+                          color: currentTab == 1
+                              ? const Color.fromARGB(222, 0, 40, 127)
+                              : Colors.grey),
                     )
                   ],
                 ),
