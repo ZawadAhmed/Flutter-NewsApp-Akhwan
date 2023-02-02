@@ -26,9 +26,8 @@ class _HomeState extends State<Home> {
           Tab(
             child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                //border: Border.all(color: Colors.blue)
-              ),
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(color: Colors.blue)),
               child: Align(
                 alignment: Alignment.center,
                 child: Padding(
@@ -41,9 +40,8 @@ class _HomeState extends State<Home> {
           Tab(
             child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(50),
-                //border: Border.all(color: Colors.blue)
-              ),
+                  borderRadius: BorderRadius.circular(50),
+                  border: Border.all(color: Colors.blue)),
               child: Align(
                 alignment: Alignment.center,
                 child: Padding(
@@ -103,7 +101,7 @@ class _HomeState extends State<Home> {
                 ),
               ],
             ),
-            backgroundColor: Colors.white,
+            backgroundColor: Colors.blueGrey,
             drawer: DrawerMenu(),
             body: TabBarView(
               children: <Widget>[

@@ -58,18 +58,15 @@ Our system contains the following features:
  - Animation
  
 [Dependencies]
-  animated_splash_screen: ^1.1.0
-  flutter_spinkit: ^5.1.0
-  cloud_firestore: ^3.1.0
-  firebase_core: ^1.10.0
-  firebase_storage: ^10.1.0
-  firebase_auth: ^4.2.5
-  provider: ^6.0.5
-  http: ^0.13.3
-  shimmer: ^2.0.0
-  webview_flutter: ^2.0.13
-  flutter_svg: ^0.22.0
-  hexcolor: ^2.0.5
-  page_transition: "^2.0.9"
+  - animated_splash_screen: ^1.1.0
+  - cloud_firestore: ^3.1.0
+  - firebase_core: ^1.10.0
+  - firebase_storage: ^10.1.0
+  - firebase_auth: ^4.2.5
+  - http: ^0.13.3
+  - shimmer: ^2.0.0
+  - webview_flutter: ^2.0.13
+  - hexcolor: ^2.0.5
+  - page_transition: "^2.0.9"
     
 

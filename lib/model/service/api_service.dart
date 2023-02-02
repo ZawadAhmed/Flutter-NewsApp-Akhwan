@@ -1,5 +1,4 @@
 import 'dart:convert';
-
 import 'package:http/http.dart' as http;
 import 'package:newsportalmy/model/news.dart';
 
@@ -23,6 +22,7 @@ class ApiService {
     return parseNews(response.body);
   }
 
+  // Fetch News Sport
   Future<List<News>> fetchNewsSport(http.Client client) async {
     _category = "sport";
     final response = await client.get(Uri.parse(
@@ -30,6 +30,7 @@ class ApiService {
     return parseNews(response.body);
   }
 
+  // Fetch News Business
   Future<List<News>> fetchNewsBusiness(http.Client client) async {
     _category = "business";
     final response = await client.get(Uri.parse(
@@ -37,6 +38,7 @@ class ApiService {
     return parseNews(response.body);
   }
 
+  // Fetch News Technology
   Future<List<News>> fetchNewsTechnology(http.Client client) async {
     _category = "technology";
     final response = await client.get(Uri.parse(
