@@ -12,8 +12,8 @@ SDK version 33
 
  
 | Name        | Matric           | Role  |
-| ------------- |:-------------:| -----:|
-| Zawad Wasik Ahmed   | 1912485 | Group Leader |
+| -------------:-------------:|----------------------------:|
+| Zawad Wasik Ahmed   | 1912485 | Group Leader              |
 | Arief Iskandar Bin Shaffei     |   2010047    |   Soldier |
 
  ### Brief Description 
@@ -27,9 +27,12 @@ The categories for the news type are as follows:
 4. Sports
 
 Our system contains the following features:
-1. 
-2. 
-3.  
+1. Fetches news from an API.
+2. Sign up function using Gmail.
+3. Sign in using created account. 
+4. Browse through four categories of News. 
+5. News split into Breaking news & Top news.
+6. Profile drawer, displaying image and email.
 
 ### Tasks Assigned
 
@@ -38,12 +41,13 @@ Our system contains the following features:
 |     1. Setting up the Project                     |     1. Planning out the project and pages      | 
 |     2. Homepage & Portal UI                       |     2. Splashscreen & Login page UI            |
 |     3. Coding Homepage.dart, Home.dart, General news files for the application   |     3. Coding Technology and Business files for the application |
-|     4. Working on the API                         | Working on the API |  
-|     5. Setting up widgets:   |     4. Venue Validation                |
-|        i) detailNews.dart    |     i) splash.dart                     |
-|        ii) home.dart         |     ii) drawer.dart                    |
-|        iii) .dart            |     i) login.dart                      |
-|        ii) serice_Api        |    service_Api                         |
+|     4. Working on the API                         | 4. Working on the API |  
+|     5. Creating Widgets:     |     5. Creating Widgets                |
+|        i) detailNews        |          i) splashscreen                |
+|        ii) homepage         |     ii) drawer.dart                     |
+|        iii) News catergory layout            |     iii) SignIn/SignUp |
+|        iv) serice_Api        |    iv) service_Api                     |
+|           
 |    6. Firebase setup         |    Firebase Authentication             |
 
 
@@ -69,9 +73,47 @@ Our system contains the following features:
   - hexcolor: ^2.0.5
   - page_transition: "^2.0.9"
     
- ### References
+### Sequence Diagram
+
+
+### Interface
+
+Splashscreen
+<br>
+<br>
+
+![SplashScreen](https://user-images.githubusercontent.com/69716177/216464347-f08601f0-43b8-419c-9a99-0c913f38d0ff.png)
+
+<br>
+<br>
+SignUp
+<br>
+![Screenshot_20230203_061505](https://user-images.githubusercontent.com/69716177/216465631-da11d50a-7a22-4aa5-93d5-bb3407e8dccc.png)
+
+SignIn
+<br>
+<br>
+![Screenshot_20230203_061821](https://user-images.githubusercontent.com/69716177/216465786-74d9e773-64fd-40b0-a6f5-66e36a7c5b8c.png)
+
+
+Drawer
+<br>
+![drawer](https://user-images.githubusercontent.com/69716177/216464236-b2270386-c9c3-4779-b168-f94882d55e00.png)
+<br>
+<br>
+
+Homepage
+<br>
+<br>
+![Screenshot_20230203_060047](https://user-images.githubusercontent.com/69716177/216465856-ff1a52a4-8ecf-4bf6-8a43-8e1c6087b4dc.png)
+
+
+
+
+### References
  
  - https://docs.flutter.dev/development/ui/advanced/gestures
+ - https://firebase.google.com/docs/flutter/setup?platform=ios
  - https://pub.dev/packages/firebase_core
  - https://pub.dev/packages/firebase_auth
  - https://www.youtube.com/watch?v=TkuO8OLgvkk (Login & Logout • Firebase x Flutter Tutorial)
