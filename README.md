@@ -1,6 +1,13 @@
-# Flutter-NewsApplication
+#NewsPortalMY
 
-## Group Akhwan
+## Flutter-NewsApplication 
+
+Flutter version 3.7.0
+Dart 2.19.0 
+SDK version 33
+
+
+### Group Akhwan
 
 
  
@@ -11,21 +18,58 @@
 
  ### Brief Description 
 
-Our system is designed as an event booking system, the users can easily book an event using the system. The system allows the users to
-insert Event name as Title and the organizer name as well as choosing the Date, Month and the respective venue which they would like to book for the event. The users can keep adding events into the system as it is in a loop, when the user is satisfied with booking events, they can easily exit the system when the system asks whether to continue or exit. 
+Our application is designed as a News app which fetches an API from newsapi(https://newsapi.org/), the users first need to sign in using their gmail account and then can easily browse through the news from the appilication. The application allows the users to view news on four different categories, the news are only catered to Malaysians looking to view news on malaysia , therefore it is perfect for users who are interested in filtering out the news and only want to read news based within their nation. 
+
+The categories for the news type are as follows: 
+1. General News 
+2. Business
+3. Technology 
+4. Sports
 
 Our system contains the following features:
-1. Distinguish between months that have 31 days and 30 days. Shows an error if the date chosen is more than the range.
-2. Each event is a full day event. No event cannot be held on the same day in the same venue, users can book a different venue for the same day but booking the same venue who result in an error.
-3. Will display an error if there are any clashes of booking the same venue and date. 
+1. 
+2. 
+3.  
 
 ### Tasks Assigned
 
 | Zawad Wasik Ahmed   | Arief Iskandar Bin Shaffei |
-| --------------------------------------------------|:--------------------------------------:|
-|     1. Setting Variables                          |     1. Storing event details           | 
-|     2. Creating conditions for Date Validation    |     2. Creating User Input             |
-|     3. Sytem exit and continue loop               |     3. Conditions for Month Validation |
-|     4. Function to check overlaping of any events |     4. Venue Validation                |
+| --------------------------------------------------|:----------------------------------------------:|
+|     1. Setting up the Project                     |     1. Planning out the project and pages      | 
+|     2. Homepage & Portal UI                       |     2. Splashscreen & Login page UI            |
+|     3. Coding Homepage.dart, Home.dart, General news files for the application   |     3. Coding Technology and Business files for the application |
+|     4. Working on the API                         | Working on the API |  
+|     5. Setting up widgets:   |     4. Venue Validation                |
+|        i) detailNews.dart    |     i) splash.dart                     |
+|        ii) home.dart         |     ii) drawer.dart                    |
+|        iii) .dart            |     i) login.dart                      |
+|        ii) serice_Api        |    service_Api                         |
+|    6. Firebase setup         |    Firebase Authentication             |
+
+
+### Widgets & Dependencies 
+
+[Widgets] 
+ - Drawer 
+ - Login 
+ - Homepage
+ - Api 
+ - Splashscreen 
+ - Animation
+ 
+[Dependencies]
+  animated_splash_screen: ^1.1.0
+  flutter_spinkit: ^5.1.0
+  cloud_firestore: ^3.1.0
+  firebase_core: ^1.10.0
+  firebase_storage: ^10.1.0
+  firebase_auth: ^4.2.5
+  provider: ^6.0.5
+  http: ^0.13.3
+  shimmer: ^2.0.0
+  webview_flutter: ^2.0.13
+  flutter_svg: ^0.22.0
+  hexcolor: ^2.0.5
+  page_transition: "^2.0.9"
     
 
