@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:newsportalmy/view/homepage.dart';
 
+//Drawer Widget creation
+
 class DrawerMenu extends StatelessWidget {
   const DrawerMenu({Key? key}) : super(key: key);
 

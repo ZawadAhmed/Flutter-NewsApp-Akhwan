@@ -4,6 +4,8 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:newsportalmy/model/news.dart';
 
+//API Call from newsapi.org
+
 class ApiService {
   late String _category;
   String _country = "my";
@@ -47,11 +49,4 @@ class ApiService {
         '${_baseUrl}top-headlines?country=$_country&category=$_category&apiKey=$_apiKey2'));
     return parseNews(response.body);
   }
-
-  /*Future<List<News>> fetchNewsHealth(http.Client client) async {
-    _category = "health";
-    final response = await client.get(Uri.parse(
-        '${_baseUrl}top-headlines?country=$_country&category=$_category&apiKey=$_apiKey2'));
-    return parseNews(response.body);
-  }*/
 }

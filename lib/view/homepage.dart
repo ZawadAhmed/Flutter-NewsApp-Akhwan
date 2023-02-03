@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import '../widget/home.dart';
 
+// Main landing page for the application after succcessful login
+
 class Homepage extends StatefulWidget {
   const Homepage({Key? key}) : super(key: key);
 

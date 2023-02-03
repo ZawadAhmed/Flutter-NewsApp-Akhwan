@@ -5,6 +5,8 @@ import 'package:newsportalmy/widget/drawer.dart';
 import 'package:newsportalmy/view/page/general/generalNews.dart';
 import 'package:newsportalmy/view/page/technology/technology_News.dart';
 
+// Home widget for topbar and bottomNavbar.
+
 class Home extends StatefulWidget {
   Home({Key? key}) : super(key: key);
 

@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
+//Shimmer Animation for Breaking News
+
 class ShimmerLoadingBreak extends StatelessWidget {
   const ShimmerLoadingBreak({Key? key}) : super(key: key);
 
@@ -46,6 +48,8 @@ class ShimmerLoadingBreak extends StatelessWidget {
     );
   }
 }
+
+// Shimmer loading animation for headings
 
 class ShimmerLoadingTopHead extends StatelessWidget {
   const ShimmerLoadingTopHead({Key? key}) : super(key: key);

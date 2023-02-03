@@ -1,5 +1,7 @@
 // ignore_for_file: prefer_if_null_operators
 
+// Class variable creation for API
+
 class News {
   String author;
   String title;

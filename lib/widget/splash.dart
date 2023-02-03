@@ -5,6 +5,14 @@ import 'package:page_transition/page_transition.dart';
 import 'package:shimmer/shimmer.dart';
 import 'package:newsportalmy/widget/login.dart';
 
+/*  INFO 4335 MOBILE APP DEVELOPMENT FINAL ASSESSMENT 
+
+  Name : Zawad Wasik Ahmed
+  Matric: 1912485 
+  Name : Arief Iskandar Bin Shaffei
+  Matric: 2010047
+*/
+
 class SplashScreen extends StatelessWidget {
   const SplashScreen({Key? key}) : super(key: key);
 

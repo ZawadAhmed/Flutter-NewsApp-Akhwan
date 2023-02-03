@@ -69,7 +69,7 @@ class BreakNewsList extends StatelessWidget {
                               style: TextStyle(
                                   fontSize: 14,
                                   fontWeight: FontWeight.bold,
-                                  color: HexColor('#4E3A55')),
+                                  color: Colors.black),
                             ),
                             Text(
                               news[index].published,
