@@ -18,7 +18,11 @@ SDK version 33
 
  ### Brief Description 
 
-Our application is designed as a News app which fetches an API from newsapi(https://newsapi.org/), the users first need to sign in using their gmail account and then can easily browse through the news from the appilication. The application allows the users to view news on four different categories, the news are only catered to Malaysians looking to view news on malaysia , therefore it is perfect for users who are interested in filtering out the news and only want to read news based within their nation. 
+Our application is designed as a News app which fetches an API from newsapi(https://newsapi.org/), the users first need to sign in using their gmail account and then can easily browse through the news from the appilication. 
+
+### Objective
+
+The application allows the users to view news on four different categories, the news are only catered to Malaysians looking to view news on malaysia , therefore it is perfect for users who are interested in filtering out the news and only want to read news based within their nation. 
 
 The categories for the news type are as follows: 
 1. General News 
@@ -49,6 +53,13 @@ Our system contains the following features:
 |        iv) serice_Api        |    iv) service_Api                     |
 |    6. Firebase setup         |    6. Firebase Authentication             |
 
+### Progress Report
+<br>
+![Progress Report1](https://user-images.githubusercontent.com/69716177/216700345-c492292d-e0c2-4d1c-b40b-81a409008efb.png)
+<br>
+<br>
+![Progress Report2](https://user-images.githubusercontent.com/69716177/216699723-51899745-8886-4c05-8450-76ed1122ef27.png)
+
 
 ### Widgets & Dependencies 
 
@@ -61,16 +72,16 @@ Our system contains the following features:
  - Animation
  
 [Dependencies]
-  - animated_splash_screen: ^1.1.0
-  - cloud_firestore: ^3.1.0
-  - firebase_core: ^1.10.0
-  - firebase_storage: ^10.1.0
-  - firebase_auth: ^4.2.5
-  - http: ^0.13.3
-  - shimmer: ^2.0.0
-  - webview_flutter: ^2.0.13
-  - hexcolor: ^2.0.5
-  - page_transition: "^2.0.9"
+  - animated_splash_screen: ^1.1.0 - Dependency for animations
+  - cloud_firestore: ^3.1.0   - firebase cloud storage in console
+  - firebase_core: ^1.10.0    - core dependency for firebase 
+  - firebase_storage: ^10.1.0 - storing user passwords and emails
+  - firebase_auth: ^4.2.5     - firebase authentication
+  - http: ^0.13.3             - used for API call   
+  - shimmer: ^2.0.0           - Styling & Animation
+  - webview_flutter: ^2.0.13  - calling webview for moving to the Newpaper websites
+  - hexcolor: ^2.0.5          - Hexcolor codes
+  - page_transition: "^2.0.9" - visual delays in screen transition  
     
 ### Sequence Diagram
 ![Akhwan Sequence Diagram drawio (1)](https://user-images.githubusercontent.com/69716177/216523861-5c207125-db3a-4732-81fe-224f385f07d5.png)
@@ -118,12 +129,13 @@ Homepage
 
 
 ### References
- 
+ - https://medium.com/@anmol-gupta/authenticating-users-with-flutter-and-firebase-rest-api-bdc7530759ba
  - https://docs.flutter.dev/development/ui/advanced/gestures
  - https://firebase.google.com/docs/flutter/setup?platform=ios
  - https://pub.dev/packages/firebase_core
  - https://pub.dev/packages/firebase_auth
+ - https://newsapi.org/
  - https://www.youtube.com/watch?v=TkuO8OLgvkk (Login & Logout • Firebase x Flutter Tutorial)
  - https://www.youtube.com/watch?v=Mfa3u3naQew (Sign Up Users • Firebase x Flutter Tutorial) 
  - https://www.youtube.com/watch?v=Sp4_2zi0kZg (Reset Password • Firebase x Flutter Tutorial)
-  - https://www.youtube.com/watch?v=idJDAdn_jKk (Create & Store User Data • Firebase x Flutter Tutorial)
+ - https://www.youtube.com/watch?v=idJDAdn_jKk (Create & Store User Data • Firebase x Flutter Tutorial)
