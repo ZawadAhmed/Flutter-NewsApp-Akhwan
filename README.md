@@ -73,6 +73,8 @@ Our system contains the following features:
   - page_transition: "^2.0.9"
     
 ### Sequence Diagram
+![Akhwan Sequence Diagram drawio (1)](https://user-images.githubusercontent.com/69716177/216523861-5c207125-db3a-4732-81fe-224f385f07d5.png)
+
 
 
 ### Interface
@@ -85,14 +87,20 @@ Splashscreen
 
 <br>
 <br>
+
 SignUp
+
 <br>
-![Screenshot_20230203_061505](https://user-images.githubusercontent.com/69716177/216465631-da11d50a-7a22-4aa5-93d5-bb3407e8dccc.png)
+
+![register](https://user-images.githubusercontent.com/69716177/216523476-6c2104af-4d67-4367-a68a-4044a55b98f1.png)
+
+
 
 SignIn
 <br>
 <br>
-![Screenshot_20230203_061821](https://user-images.githubusercontent.com/69716177/216465786-74d9e773-64fd-40b0-a6f5-66e36a7c5b8c.png)
+![login](https://user-images.githubusercontent.com/69716177/216523412-d6915d10-6b81-4ad0-81cd-a3310ecc4bc3.png)
+
 
 
 Drawer
