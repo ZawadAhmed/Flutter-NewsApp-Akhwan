@@ -12,8 +12,8 @@ SDK version 33
 
  
 | Name        | Matric           | Role  |
-| -------------:-------------:|----------------------------:|
-| Zawad Wasik Ahmed   | 1912485 | Group Leader              |
+| ------------- |:-------------:| -----:|
+| Zawad Wasik Ahmed   | 1912485 | Group Leader |
 | Arief Iskandar Bin Shaffei     |   2010047    |   Soldier |
 
  ### Brief Description 
@@ -47,8 +47,7 @@ Our system contains the following features:
 |        ii) homepage         |     ii) drawer.dart                     |
 |        iii) News catergory layout            |     iii) SignIn/SignUp |
 |        iv) serice_Api        |    iv) service_Api                     |
-|           
-|    6. Firebase setup         |    Firebase Authentication             |
+|    6. Firebase setup         |    6. Firebase Authentication             |
 
 
 ### Widgets & Dependencies 
